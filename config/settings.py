@@ -7,8 +7,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY', 'your-secret-key')
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['treecraze-garbage-app.onrender.com']
-CSRF_TRUSTED_ORIGINS = ['https://treecraze-garbage-app.onrender.com']
+ALLOWED_HOSTS = ['treecraze-backend.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://treecraze-backend.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
