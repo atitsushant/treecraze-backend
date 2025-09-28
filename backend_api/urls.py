@@ -1,6 +1,8 @@
 from django.urls import path
-from . import views
+from .views import submit_report, get_reports
 
 urlpatterns = [
-    path('backend_api/', views.submit_report, name='submit_report'),
+    path('reports/', get_reports, name='get-reports'),
+    path('submit/', submit_report, name='submit-report'),
+    path('api/', include('yourapp.urls')),
 ]
